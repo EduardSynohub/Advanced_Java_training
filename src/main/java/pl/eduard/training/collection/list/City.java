@@ -1,4 +1,4 @@
-package pl.eduard.training.collection;
+package pl.eduard.training.collection.list;
 
 public class City {
     private String name;
