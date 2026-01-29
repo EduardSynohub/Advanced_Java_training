@@ -30,7 +30,7 @@ public class Task3 {
     }
 
     public static void addEquationToFile(String equationToWrite) {
-        Path path = Paths.get("operations.txt");
+        Path path = Paths.get("files/operations.txt");
 
         if (!Files.exists(path)) {
             try {
