@@ -11,8 +11,7 @@ public class Task5 {
     public static final String EMAIL_REGEX = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
     public static final String ONLY_LETTERS_REGEX = "^[A-Z][a-z]*$";
     public static final String INTEGER_AGE_REGEX = "^([1-9][0-9]?){1}$";
-
-    public static void main(String[] args) {
+    public static List<Person> filteredPeople() {
         Path path = Paths.get("files/people.csv");
         List<Person> people = new ArrayList<>();
 
@@ -40,8 +39,6 @@ public class Task5 {
             System.out.println("Reading file error: " + e.getMessage());
         }
 
-        for (Person p : people) {
-            System.out.println(p);
-        }
+        return people;
     }
 }
