@@ -1,8 +1,6 @@
 package pl.eduard.training.collection.map_set;
 
 import java.util.Map;
-import java.util.Random;
-import java.util.TreeMap;
 
 public class Task6 {
     public static void main(String[] args) {
