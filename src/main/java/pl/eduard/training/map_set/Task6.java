@@ -1,4 +1,4 @@
-package pl.eduard.training.collection.map_set;
+package pl.eduard.training.map_set;
 
 import java.util.Map;
 

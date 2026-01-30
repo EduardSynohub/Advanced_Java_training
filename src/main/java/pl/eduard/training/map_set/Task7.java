@@ -1,7 +1,7 @@
-package pl.eduard.training.collection.map_set;
+package pl.eduard.training.map_set;
 
-import pl.eduard.training.collection.list.Person;
-import pl.eduard.training.collection.list.Task5;
+import pl.eduard.training.collection.Person;
+import pl.eduard.training.collection.Task5;
 
 import java.util.ArrayList;
 import java.util.List;

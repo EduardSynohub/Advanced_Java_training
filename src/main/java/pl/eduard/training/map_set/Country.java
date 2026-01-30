@@ -1,4 +1,4 @@
-package pl.eduard.training.collection.map_set;
+package pl.eduard.training.map_set;
 
 public class Country {
     private String name;
