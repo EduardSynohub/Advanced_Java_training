@@ -1,4 +1,4 @@
-package pl.eduard.training.collection.list;
+package pl.eduard.training.collection;
 
 import java.util.ArrayList;
 import java.util.Iterator;
