@@ -1,4 +1,4 @@
-package pl.eduard.training.collection.regex;
+package pl.eduard.training.regex;
 
 public class Task4 {
     public static final String REGEX_1 = "\\d+\\.\\d+";

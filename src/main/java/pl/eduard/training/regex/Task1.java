@@ -1,4 +1,4 @@
-package pl.eduard.training.collection.regex;
+package pl.eduard.training.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

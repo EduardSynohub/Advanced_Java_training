@@ -1,4 +1,4 @@
-package pl.eduard.training.collection.regex;
+package pl.eduard.training.regex;
 
 
 public class Task2 {
