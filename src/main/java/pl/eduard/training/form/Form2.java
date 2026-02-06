@@ -12,10 +12,11 @@ import java.io.IOException;
 public class Form2 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String[] badWords = {"fuck", "bitch", "bullshit", "fucking"};
+        String[] badWords = {"stupid", "bullshit"};
         String userInput = req.getParameter("userInput");
         String userAware = req.getParameter("userAware");
-        String adminAnswer = "";
+        StringBuilder checkedUserInput = new StringBuilder(userInput);
+
 
         if (userAware != null) {
             resp.getWriter().write(userInput);
@@ -27,12 +28,15 @@ public class Form2 extends HttpServlet {
             for (String s : userInputArray) {
                 if (checkBadWord(badWords, s)) {
                     String censoringBadWord = censorship(s);
-                    adminAnswer = userInput.replaceAll(s, censoringBadWord);
+                    int firstIndexOfBadWord = checkedUserInput.indexOf(s);
+                    int lastIndexOfBadWord = s.length() + firstIndexOfBadWord;
+
+                    checkedUserInput.replace(firstIndexOfBadWord, lastIndexOfBadWord, censoringBadWord);
                 }
             }
-        }
 
-        resp.getWriter().write(adminAnswer);
+            resp.getWriter().write(checkedUserInput.toString());
+        }
     }
 
     protected boolean checkBadWord(String[] badWordsArray, String wordToCheck) {
