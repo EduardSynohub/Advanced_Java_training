@@ -23,13 +23,13 @@ public class Session4 extends HttpServlet {
         resp.setContentType("text/plain; charset=UTF-8");
 
         if (cart != null && !cart.isEmpty()) {
-            double total = 0.0;
+            double total = 0.00;
             for(CartItem ci : cart) {
                 double sum = ci.getQuantity() * ci.getPrice();
                 total += sum;
                 resp.getWriter().write(String.format("%s - %d x %.2fzł = %.2fzł\n", ci.getName(), ci.getQuantity(), ci.getPrice(), sum));
             }
-            resp.getWriter().write("SUM: " + BigDecimal.valueOf(total).setScale(2, RoundingMode.HALF_UP).doubleValue() + "zł");
+            resp.getWriter().write("SUM: " + total + "zł");
         } else {
             resp.getWriter().write("Cart is empty.");
         }
