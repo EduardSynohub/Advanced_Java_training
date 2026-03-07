@@ -1,4 +1,4 @@
-package pl.eduard.training.session;
+package pl.eduard.training.sessions;
 
 public class CartItem {
     private String name;

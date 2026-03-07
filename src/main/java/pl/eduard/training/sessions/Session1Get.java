@@ -1,4 +1,4 @@
-package pl.eduard.training.session;
+package pl.eduard.training.sessions;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
