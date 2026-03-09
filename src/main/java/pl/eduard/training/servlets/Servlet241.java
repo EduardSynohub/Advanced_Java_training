@@ -1,4 +1,4 @@
-package pl.eduard.training.servlet;
+package pl.eduard.training.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -7,7 +7,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.util.Random;
 
 @WebServlet("/servlet241")
 public class Servlet241 extends HttpServlet {

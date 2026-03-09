@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency exchange</title>
+</head>
+<body>
+
+<form action="/currencyExchange" method="post">
+  <label>
+    Amount of money:
+    <input type="number" min="0.00" step="0.01" name="moneyAmount">
+  </label>
+  <br>
+  <label>
+    <select name="currency">
+      <option value="eurToUsd">EUR -> USD</option>
+      <option value="usdToEur">USD -> EUR</option>
+      <option value="eurToPln">EUR -> PLN</option>
+      <option value="plnToEur">PLN -> EUR</option>
+      <option value="usdToPln">USD -> PLN</option>
+      <option value="plnToUsd">PLN -> USD</option>
+    </select>
+  </label>
+  <br>
+  <label>
+    <input type="submit" value="Submit">
+  </label>
+</form>
+
+</body>
+</html>

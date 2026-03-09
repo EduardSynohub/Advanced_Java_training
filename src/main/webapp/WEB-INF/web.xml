@@ -11,7 +11,7 @@
 
     <servlet>
         <servlet-name>MySecondServlet</servlet-name>
-        <servlet-class>pl.eduard.training.servlet.Servlet12</servlet-class>
+        <servlet-class>pl.eduard.training.servlets.Servlet12</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MySecondServlet</servlet-name>

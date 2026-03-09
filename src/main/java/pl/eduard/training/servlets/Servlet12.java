@@ -1,4 +1,4 @@
-package pl.eduard.training.servlet;
+package pl.eduard.training.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
