@@ -31,7 +31,17 @@ public class Cookie36 extends HttpServlet {
         }
 
         if (!find) {
-            printer(out);
+            out.println("<html>");
+            out.println("<body>");
+
+            out.println("<form action='rememberMe' method='POST'>");
+            out.println("Name: <input type='text' name='userName'><br><br>");
+            out.println("<input type='checkbox' name='remember'> Remember me<br><br>");
+            out.println("<input type='submit' value='Submit'>");
+            out.println("</form>");
+
+            out.println("</body>");
+            out.println("</html>");
         }
     }
 
@@ -54,19 +64,5 @@ public class Cookie36 extends HttpServlet {
         } else {
             resp.getWriter().write(String.format("Hello %s", userName));
         }
-    }
-
-    protected void printer(PrintWriter out) {
-        out.println("<html>");
-        out.println("<body>");
-
-        out.println("<form action='rememberMe' method='POST'>");
-        out.println("Name: <input type='text' name='userName'><br><br>");
-        out.println("<input type='checkbox' name='remember'> Remember me<br><br>");
-        out.println("<input type='submit' value='Submit'>");
-        out.println("</form>");
-
-        out.println("</body>");
-        out.println("</html>");
     }
 }
