@@ -14,6 +14,8 @@
 <a href="jsp3.jsp">Book form</a>
 <br>
 <a href="/mvc14">Book list</a>
+<br>
+<a href="login.jsp">Admin filter</a>
 
 <jsp:include page="footer.jsp"/>
 <br>
