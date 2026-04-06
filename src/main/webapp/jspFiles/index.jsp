@@ -10,6 +10,10 @@
 <br>
 <jsp:include page="header.jsp"/>
 <a href='<c:url value="/setCookieFoo"/>'>Set Cookie foo</a>
+<br>
+<a href="jsp3.jsp">Book form</a>
+<br>
+<a href="/mvc14">Book list</a>
 
 <jsp:include page="footer.jsp"/>
 <br>
