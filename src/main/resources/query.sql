@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS newsletterDB;
+USE newsletterDB;
+
+CREATE TABLE IF NOT EXISTS newsletter (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        userEmail VARCHAR(255) NOT NULL UNIQUE,
+        userName VARCHAR(255) NOT NULL
+    );
